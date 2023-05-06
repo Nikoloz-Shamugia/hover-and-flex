@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+header{
+    justify-content: space-between;
+    margin: 20px 0;
+}
+header, .site-logo a , .user-info{
+    display: flex;
+    align-items: center;
+}
+.site-logo a{
+    text-decoration: none;
+}
+.site-logo a img{
+    width: 44px ;
+    height: 40px;
+    margin-right: 30px;
+}
+.site-logo a p{
+    font-size: 40px;
+    font-family: poppins;
+    color: black;
+}
+.user-info{
+    list-style: none;
+}
+.user-info a{
+    margin-right: 10px;
+}
+.info-wrapper{
+    display: flex;
+    margin-top:50px;
+    justify-content: center;
+}
+.search-bar input{
+    position: absolute;
+    height: 50px;
+    border-radius: 32px 0px 0px 32px ;
+    width: 700px;
+}
+::placeholder{
+    font-size: 20px;
+    padding-left:45px;
+}
+.loope{
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+.menu{
+    position: relative;
+    left: 620px;
+    top: 8px;
+}
+.hover-block-wrapper img{
+    margin-right: 10px;
+}
+.hover-block-wrapper , .choose-department{
+    display: flex;
+    align-items: center;
+    border: 1px solid #000000;
+    padding: 10px 80px 10px 10px;
+}
+.hover-block-wrapper span{
+    font-size: 13px;
+}
+.choose-department p{
+    margin-right: 10px;
+    font-size:20px;
+    font-family: poppins;
+}
+.choose-department{
+    padding: 10px 0px 8px 10px;
+}
+.listener{
+    margin-left: 642px ;
+}
+.hover{
+    opacity: 0;
+    z-index: 0;
+}
+.choose-department:hover + .hover{
+    opacity: 1;
+    transition: 2s;
+    z-index: 1;
+}
+.hover-block-wrapper:hover{
+    background-color: blue;
+    color: white;
+    transition: 0.7s;
+}
